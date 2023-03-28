@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "type": "godot",
+            "name": "Godot Project",
+            "request": "launch",
+            "project": "${workspaceFolder}",
+            "port": 6007,
+            "address": "127.0.0.1",
+            "launch_game_instance": true,
+            "launch_scene": true
+        },
+        {
+            "type": "chrome",
+            "name": "launch.json",
+            "request": "launch",
+            "url": "launch.json"
+        }
+    ]
+}
