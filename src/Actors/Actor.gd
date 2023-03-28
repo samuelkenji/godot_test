@@ -2,8 +2,6 @@ extends CharacterBody2D
 class_name Actor
 
 @export var speed = 200
-@export var friction = 0.01
-@export var acceleration = 0.5
 
 func get_input():
 	var input = Vector2()
@@ -20,7 +18,8 @@ func get_input():
 func _physics_process(delta):
 	var direction = get_input()
 	if direction.length() > 0:
-		velocity = velocity.lerp(direction.normalized() * speed, acceleration)
+		velocity.x = direction.x * speed
+		velocity.y = direction.y * speed
 	else:
-		velocity = velocity.lerp(Vector2.ZERO, friction)
+		velocity = Vector2(0,0)
 	move_and_slide()
