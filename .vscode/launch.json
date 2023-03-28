@@ -8,7 +8,7 @@
             "port": 6007,
             "address": "127.0.0.1",
             "launch_game_instance": true,
-            "launch_scene": true
+            "launch_scene": false
         },
         {
             "type": "chrome",
