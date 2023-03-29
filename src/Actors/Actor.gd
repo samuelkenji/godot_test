@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name Actor
 
-@export var speed = 200
+@export var speed = 400
 
 func get_input():
 	var input = Vector2()
@@ -23,3 +23,6 @@ func _physics_process(delta):
 	else:
 		velocity = Vector2(0,0)
 	move_and_slide()
+
+	var player_position = self.global_position
+	print('Player position: ', player_position)
