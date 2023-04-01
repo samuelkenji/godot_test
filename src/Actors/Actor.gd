@@ -25,4 +25,4 @@ func _physics_process(delta):
 	move_and_slide()
 
 	var player_position = self.global_position
-	print('Player position: ', player_position)
+	#print('Player position: ', player_position)
